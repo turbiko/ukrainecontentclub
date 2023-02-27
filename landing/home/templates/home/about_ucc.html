@@ -1,0 +1,11 @@
+{% load static wagtailcore_tags %}
+        <div class="main_block_central block__row_1">
+            <div class="block__flex_element_1">
+                <div class="title_line_div">
+                    <span class="title_line partners_bold56"> {{page.logo_text}} </span>
+                </div>
+            </div>
+            <div class="block__flex_element_2">
+                <p class="text_yellow_background about_text">{{page.text_intro | safe  }}</p>
+            </div>
+        </div>

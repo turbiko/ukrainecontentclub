@@ -1,0 +1,6 @@
+{% load static wagtailcore_tags %}
+                <div class="block__flex_why">
+              {% for block in page.why_block %}
+              {% include_block block %}
+              {% endfor %}
+                </div>

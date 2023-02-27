@@ -1,0 +1,9 @@
+{% load static wagtailcore_tags %}
+        <div class="main_block_central page__section_media">
+            <div class="block_media">
+                    {# streams block for media about us #}
+                    {% for block in page.media_about %}
+                    {% include_block block %}
+                    {% endfor %}
+            </div>
+        </div>

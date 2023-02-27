@@ -1,0 +1,10 @@
+{% load static wagtailcore_tags %}
+        <div class="main_block_central block_flex_centered">
+                <div class="supported_by partners_logos_container_width">
+                    <div class="block__supported_logos_container partners_logos_container_width">
+                    {% for block in page.partners_logo %}
+                        {% include_block block %}
+                    {% endfor %}
+                    </div>
+                </div>
+        </div>

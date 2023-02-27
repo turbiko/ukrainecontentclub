@@ -1,0 +1,7 @@
+{% load static wagtailcore_tags %}
+
+                <div class="block_how">
+                  {% for block in page.how_block %}
+                  {% include_block block %}
+                  {% endfor %}
+                </div>

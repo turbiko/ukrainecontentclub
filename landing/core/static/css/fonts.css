@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'KyivTypeSansH';
+    src: url('../fonts/KyivTypeSans-Heavy.woff2') format('woff2'), url('../fonts/KyivTypeSans-Heavy.woff') format('woff'), url('../fonts/KyivTypeSans-Heavy.eot') format('eot');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KyivType Sans Heavy';
+    src: url('../fonts/KyivTypeSans-Heavy-.woff2') format('woff2'), url('../fonts/KyivTypeSans-Heavy-.woff') format('woff'), url('../fonts/KyivTypeSans-Heavy-.eot') format('eot');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KyivType Sans';
+    src: url('../fonts/KyivTypeSans-Regular.woff2') format('woff2'), url('../fonts/KyivTypeSans-Regular.woff') format('woff'), url('../fonts/KyivTypeSans-Regular.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KyivType SansM';
+    src: url('../fonts/KyivTypeSans-Regular-.woff2') format('woff2'), url('../fonts/KyivTypeSans-Regular-.woff') format('woff'), url('../fonts/KyivTypeSans-Regular-.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mindfully';
+    src: url('../fonts/Mindfully-Regular.woff2') format('woff2'), url('../fonts/Mindfully-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.ksanshm_bold36 {
+    font-family: 'KyivType Sans Heavy';
+    font-size: 36px;
+    line-height: 1.4;
+}
+
+.ksanshm_bold61 {
+    font-family: 'KyivType Sans Heavy';
+    font-size: 61px;
+    line-height: 1.4;
+}
+
+.partners_bold22 {
+    font-family: "KyivType Sans Heavy";
+    font-size: 22px;
+}
+
+.partners_bold56 {
+    font-family: "KyivType Sans Heavy";
+    font-size: 56px;
+    line-height: 58px;
+}
+
+.font_reg20_28 {
+    font-family: 'KyivType Sans';
+    font-size: 20px;
+    line-height: 28px;
+}
+
+#minf_regnumber {
+    font-family: 'Mindfully';
+    font-size: 118px;
+}
+
+#guid_principe_title {
+    font-family: 'KyivType Sans Heavy';
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+#menu_sansh14 {
+    font-family: 'KyivTypeSansH';
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.font_sansh22 {
+    font-family: 'KyivTypeSansH';
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+.font_sansh24 {
+    font-family: 'KyivTypeSansH';
+    font-size: 24px;
+    line-height: 1.1;
+}
+
+#font_sansh20 {
+    font-family: 'KyivTypeSansH';
+    font-size: 20px;
+}
+
+.font_sansh61 {
+    font-family: 'KyivTypeSansH';
+    font-size: 61px;
+    line-height: 1.4;
+}
+
+#font_61 {
+    font-family: 'KyivType Sans Heavy';
+    font-size: 61px;
+}
+
+.partners_bold118 {
+    font-family: "KyivType Sans Heavy";
+    font-size: 118px;
+    line-height: 122px;
+}
+
+@media (min-width: 970px) {
+    .partners_logos_container_width {
+        width: 800px;
+        margin: 0 5px;
+    }
+    .font_sansh61 {
+        font-family: 'KyivTypeSansH';
+        font-size: 61px;
+        line-height: 1.4;
+    }
+    .font_sansh61 {
+        font-family: 'KyivTypeSansH';
+        font-size: 61px;
+        line-height: 1.4;
+    }
+    .font_sansh61 {
+        font-family: 'KyivTypeSansH';
+        font-size: 61px;
+        line-height: 1.4;
+    }
+    .font_reg20_28 {
+        font-family: 'KyivType Sans';
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .partners_bold118 {
+        font-family: "KyivType Sans Heavy";
+        font-size: 118px;
+        line-height: 122px;
+    }
+    .font_sansh61 {
+        font-family: 'KyivTypeSansH';
+        font-size: 61px;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 970px) {
+    .partners_bold118 {
+        font-family: "KyivType Sans Heavy";
+        font-size: 118px;
+        line-height: 122px;
+    }
+    .font_sansh61 {
+        font-family: 'KyivTypeSansH';
+        font-size: 61px;
+        line-height: 1.4;
+    }
+    .font_reg20_28 {
+        font-family: 'KyivType Sans';
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 767px) {
+    .partners_bold118 {
+        font-family: "KyivType Sans Heavy";
+        font-size: 88px;
+        line-height: 122px;
+    }
+    .font_sansh61 {
+        font-family: 'KyivTypeSansH';
+        font-size: 45px;
+        line-height: 1;
+    }
+    .font_reg20_28 {
+        font-family: 'KyivType Sans';
+        font-size: 16px;
+        line-height: 1.2;
+    }
+}

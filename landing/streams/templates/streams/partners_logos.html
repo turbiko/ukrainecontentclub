@@ -1,0 +1,15 @@
+{% load wagtailimages_tags %}
+<!-- ====== {{ self.title }} ===== -->
+                        <div class="block__header_supported_by partners_logos_container_width">
+                            <h1><span class="main_color">&nbsp;{{ self.title }}&nbsp;</span></h1>
+                        </div>
+                  <div class="block__logotypes_flex">
+                        {% for card in self.partners_logo_cards %}
+                        {% image card.image original as img %}
+                        <div class="image_logos">
+                            <a href="{{ card.logo_url}}" target="_blank">
+                                <img alt="{{ card.logo_title }}"  src="{{img.url}}" width=100% />
+                            </a>
+                        </div>
+                        {% endfor %}
+                  </div>

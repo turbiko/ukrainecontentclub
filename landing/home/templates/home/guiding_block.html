@@ -1,0 +1,8 @@
+{% load static wagtailcore_tags %}
+    <div class="main_block_central ">
+      <div class="block_guiding">
+              {% for block in page.guiding %}
+              {% include_block block %}
+              {% endfor %}
+      </div>
+    </div>

@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% load static wagtailcore_tags %}
+{% block body_class %}template-homepage{% endblock %}
+{% block extra_css %}
+    <link rel="stylesheet"  type="text/css" href="{% static 'css/main.css' %}">
+{% endblock extra_css %}
+{% block content %}
+<div class="wrapper-menu"><!-- wrapper-menu -->
+    {% include 'home/main_menu.html' %}
+</div> <!-- wrapper-menu -->
+<div class="wrapper"> <!-- div wrapper -->
+    <div class="column_empty"></div>
+    <main class="wrapper_content"> <!-- main wrapper_content -->
+
+        <div class="main_block page__section_1 about_block"> <!--  about_block -->
+            <div class="main_block_side"></div>
+            {% include 'home/about_ucc.html' %}
+            <div class="main_block_side"></div>
+        </div>
+        <div class="main_block_full page__section_video"> <!-- section_video -->
+            {% include 'home/youtube_block.html' %}
+        </div>
+        <div class="main_block page__section_partners"><!-- partners_logos -->
+            <div class="main_block_side"></div>
+
+                            {% include 'home/partners_logos.html' %}
+
+            <div class="main_block_side"></div>
+        </div><!-- partners_logos -->
+        <div class="main_block page__section_first"> <!-- section_first --></div>
+
+        <div class="main_block  main_blue2"><!-- section_prologue -->
+            <div class="main_block_side"></div>
+        <div class="main_block_central page__section_prologue flex_prologue">
+            <div class="block__row_prologue">
+                <div class="block__flex_element box_prologue1">
+                    <h1 class="font_sansh61 color_yellow">{{page.text_prologue_title | safe  }}</h1>
+                </div>
+                <div class="page__text block__flex_element box_prologue2">
+                    <p class="text_prologue">{{page.text_prologue | safe  }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="main_block_side"></div>
+        </div><!-- section_prologue -->
+
+        <div class="main_block page__section_why main_color"><!-- section_why -->
+            <div class="main_block_side"></div>
+
+            <div class="main_block_central ">
+
+                {% include 'home/why.html' %}
+
+            </div>
+
+            <div class="main_block_side"></div>
+        </div><!-- section_why -->
+
+        <div class="main_block page__section_how main_blue2"><!-- _section_how -->
+
+            <div class="main_block_side"></div>
+
+            <div class="main_block_central ">
+                {% include 'home/how.html' %}
+            </div>
+
+        </div><!-- _section_how -->
+
+        <div class="main_block main_color"><!--  section_who -->
+            <div class="main_block_side"></div>
+            {% include 'home/who_we_are.html' %}
+            <div class="main_block_side"></div>
+        </div> <!--  section_who -->
+
+        <div class="main_block page__section_second"><!--  page__section_second -->
+                <div class="main_block_side"></div>
+                <div class="main_block_central"></div>
+                <div class="main_block_side"></div>
+        </div><!--  page__section_second -->
+
+        <div class="main_block page__section_guiding main_blue2"><!-- section_guiding  -->
+            <div class="main_block_side"></div>
+            {% include 'home/guiding_block.html' %}
+            <div class="main_block_side"></div>
+        </div><!-- section_guiding  -->
+
+        <div class="main_block main_yellow"> <!-- text_list_next -->
+            <div class="main_block_side"></div>
+            <div class="main_block_central page__section_next">
+                <div class="block_next">
+                    <div class="block__next_title">
+                        <h2 class="font_sansh61">{{page.text_list_next_title | safe  }}</h2>
+                    </div>
+                    <div class="block__next_text font_reg20_28">{{page.text_list_next | safe  }}</div>
+                </div>
+            </div>
+            <div class="main_block_side"></div>
+        </div><!-- text_list_next -->
+
+        <div class="main_block main_color"> <!-- media about us -->
+            <div class="main_block_side"></div>
+            {% include 'home/media_about.html' %}
+            <div class="main_block_side"></div>
+        </div><!-- media about us -->
+
+        <div class="main_block page__section_banner_2"><!-- section_banner_2 -->
+                <div class="main_block_side"></div>
+                <div class="main_block_central"></div>
+                <div class="main_block_side"></div>
+        </div><!-- section_banner_2 -->
+
+        <div class="main_block main_color"><!-- our_logos -->
+            <div class="main_block_side"></div>
+            {% include 'home/our_logos.html' %}
+            <div class="main_block_side"></div>
+        </div><!-- our_logos -->
+
+        <div class="main_block_full"><!-- text_copyright -->
+            <div class="main_block_central main_block_clear main_footer page__section_copyr">
+                <div class="footer_text block_footer page__section_copyr">{{page.text_copyright | safe  }}</div>
+            </div>
+        </div><!-- text_copyright -->
+
+    </main><!-- main wrapper -->
+    <div class="column_empty"></div>
+</div> <!-- div wrapper_content -->
+{% endblock content %}

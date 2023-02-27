@@ -1,0 +1,10 @@
+{% load static wagtailcore_tags %}
+        <div class="main_block_central page__section_who">
+            <div class="block_who">
+
+              {% for block in page.who_block %}
+              {% include_block block %}
+              {% endfor %}
+
+            </div>
+        </div>

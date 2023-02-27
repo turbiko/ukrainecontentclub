@@ -1,0 +1,14 @@
+{% load wagtailimages_tags %}
+                <div class="block__who_text">
+                {% for who in self.text_cards %}
+                    <div class="block_who_row">
+                        <div class="boolet_o"></div>
+                        <div class="text_who">
+                            {{who.text | safe  }}
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+                <div class="block__who_title page__title  color_yellow">
+                    <h1 class="partners_bold118">{{self.title_who  | safe  }}</h1>
+                </div>

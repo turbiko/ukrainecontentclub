@@ -1,0 +1,14 @@
+{% load wagtailimages_tags %}
+                 <div class="block__section_why_sec1">
+                     {% for why in self.text_cards %}
+                        <div class="block_list1">
+                            <div class="boolet_o"></div>
+                            <div class="text_list_why">{{why.text | safe  }}</div>
+                        </div>
+                     {% endfor %}
+                    </div>
+
+                    <div class="block__section_why_sec2">
+                        <h1 class="page__title_why partners_bold118 color_yellow">{{self.title_why | safe  }}</h1>
+                    </div>
+

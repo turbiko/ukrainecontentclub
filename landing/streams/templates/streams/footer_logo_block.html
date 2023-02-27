@@ -1,0 +1,30 @@
+{% load wagtailimages_tags %}
+<!-- ====== {{ self.title }} ===== -->
+<div class="block__our_logos_links">
+ {% for card in self.footer_logo_cards %}
+
+    {% image card.image original as img %}
+<div class="footer_logo" style="margin: 0 1vw 0 1vw;">
+    <img alt="{{ card.logo_title }}"  src="{{img.url}}"  />
+</div>
+
+{% endfor %}
+</div>
+  <!-- width : {{ self.width }} vw -->
+    <script>
+      const width = {{ self.width }};
+      const footerLogos = document.querySelectorAll(".footer_logo");
+
+      footerLogos.forEach(footerLogo => {
+        const img = footerLogo.querySelector("img");
+        const aspectRatio = img.naturalHeight / img.naturalWidth;
+        const height = width * aspectRatio;
+        console.log('aspect: ', aspectRatio)
+        console.log('height: ', height)
+        img.style.width = `${width}vw`;
+        img.style.height = `${height.toFixed(2)}vw`;
+      });
+
+    </script>
+
+<!-- ===END == {{ self.title }} ====== -->

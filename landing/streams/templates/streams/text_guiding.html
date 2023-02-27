@@ -1,0 +1,34 @@
+{% load wagtailimages_tags %}
+<!-- =====block__guiding====== -->
+<div class="block__guiding_title1 page__title font_sansh61 color_yellow">
+    <h1>{{self.title1 | safe  }}</h1>
+</div>
+
+<div class="block__guiding_tb">
+    {% for principe in self.text_cards %}
+    <div class="guiding_principe">
+        <div class="guiding_principe_tbnum color_yellow" id="minf_regnumber">
+            <div>{{ principe.number|default:""  }}</div>
+        </div>
+
+        <div class="guiding_principe_item">
+            <div class="block__guiding_title font_sansh24">{{principe.title| safe  }}</div>
+
+            <div class="block__guiding_text">{{ principe.description | safe  }}</div>
+        </div>
+    </div>
+    {% endfor %}
+<div class="guiding_principe">
+    <div class="guiding_principe_tbnum color_yellow" id="minf_regnumber">
+        <div></div>
+    </div>
+
+    <div class="guiding_principe_item">
+        <div class="block__guiding_title font_sansh24"></div>
+
+        <div class="block__guiding_text"></div>
+    </div>
+</div>
+
+</div>
+<!-- ====block__guiding======= -->

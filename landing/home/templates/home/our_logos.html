@@ -1,0 +1,10 @@
+{% load static wagtailcore_tags %}
+    <div class="main_block_central page__section_logos">
+        <div class="block__our_logos">
+            <div class="block__our_logos_text">{{page.text_partners | safe  }}</div>
+            {# streams block for footer logotypes #}
+            {% for block in page.footer_logo %}
+                {% include_block block %}
+            {% endfor %}
+        </div>
+    </div>
