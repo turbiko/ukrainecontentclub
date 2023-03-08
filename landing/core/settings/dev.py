@@ -1,13 +1,13 @@
 import os
 from .base import *
-
+from django.core.management import utils
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 print('DEBUG.dev= ', DEBUG)
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-)7ywpo%3%wx%-t4#25a!hgz*ub%p)njx()%*5&z$0kkf)j9d37"
+SECRET_KEY = os.path.dirname(PROJECT_DIR)
 
 # SECURITY WARNING: define the correct hosts in production!
 ALLOWED_HOSTS = ["*"]

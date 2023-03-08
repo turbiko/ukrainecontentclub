@@ -6,7 +6,7 @@ class PartnerLogo(blocks.StructBlock):
     """ logotypes: image, vw size, calculated aspect ratio"""
 
     title = blocks.CharBlock(required=True, help_text="Add your title")
-    width = blocks.IntegerBlock(required=True, help_text="Width in vw for all logos added")
+    width = blocks.IntegerBlock(required=True, help_text="Width in % in block for all logos added")
 
     partners_logo_cards = blocks.ListBlock(
             blocks.StructBlock(

@@ -1,6 +1,6 @@
-#this is refactored version for landing site
-# original: git: https://github.com/turbiko/ucc_w
-# Сайт: https://ukrainecontentclub.com.ua/
+# this is refactored version for landing site
+# origenal version will be deleted soon
+# production result: https://ukrainecontentclub.com.ua/
 
 site type: Landing
 

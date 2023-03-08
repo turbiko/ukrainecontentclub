@@ -1,0 +1,8 @@
+# 1-03-2023
+add and adopt docker template from  https://github.com/roniemartinez/docker-django-template
+
+# 27-02-2023
+Refactor code and optimize for content editor
+
+# 20-02-2023
+fork old version of landing project
