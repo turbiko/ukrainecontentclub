@@ -175,3 +175,4 @@ CSRF_TRUSTED_ORIGINS = ['https://a1.ukrainecontentclub.com.ua/', 'https://ukrain
 
 SECRET_KEY = '#$WERGFBVCCDRSRT%&^*IKJNBVFDRE$%^YUYTrt67ujhgfr567ujhbgfdefgbnjko0oiu7654edfgy7^%$ER$%^&*&^%43wdfghji8765r'
 
+CSRF_COOKIE_SECURE = True
