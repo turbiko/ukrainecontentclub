@@ -10,7 +10,7 @@ print('DEBUG.dev= ', DEBUG)
 SECRET_KEY = os.path.dirname(PROJECT_DIR)
 
 # SECURITY WARNING: define the correct hosts in production!
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://a1.ukrainecontentclub.com.ua/', 'https://ukrainecontentclub.com.ua/']
 CSRF_TRUSTED_ORIGINS = ['https://a1.ukrainecontentclub.com.ua/', 'https://ukrainecontentclub.com.ua/']
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
