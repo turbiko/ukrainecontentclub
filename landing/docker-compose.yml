@@ -4,7 +4,7 @@ services:
   ucc2web:
     build: .
     image: docker-ucc-app
-    command: sh runserver.sh
+    command: bash runserver.sh
     volumes:
       - .:/usr/src/app
     ports:
