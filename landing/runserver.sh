@@ -1,7 +1,8 @@
 #!/bin/bash
 
-if [[ "${DEBUG}" == "true" ]]; then
-  python manage.py runserver 0.0.0.0:8081
-else
-  daphne -b 0.0.0.0 -p 8081 project.asgi:application
-fi
+python manage.py makemigrations --settings=core.settings.dev
+python manage.py migrate --settings=core.settings.dev
+python manage.py collectstatic --settings=core.settings.dev --no-input --clear
+#python manage.py update_index --settings=core.settings.dev
+gunicorn core.wsgi:application -b :8000  --workers=5   --timeout=190 --graceful-timeout=100 --log-level=DEBUG
+exec "$@"
