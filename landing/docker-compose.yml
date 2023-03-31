@@ -40,9 +40,6 @@ services:
       - env/app.env
       - env/database.env
     depends_on:
-      database:
-        condition: service_healthy
-    links:
       - database
 
   nginx:
