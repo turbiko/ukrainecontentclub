@@ -1,7 +1,5 @@
 version: "3.7"
 
-volumes:
-  database:
 
 services:
   database:
@@ -21,17 +19,10 @@ services:
       timeout: 5s
       retries: 5
 
-  web:
+  uccweb:
     build: .
     image: docker-django-app
-    command:
-      - /bin/sh
-      - -c
-      - |
-        python manage.py compilemessages
-        python manage.py migrate
-        python manage.py collectstatic --noinput
-        bash runserver.sh
+    command: sh runserver.sh
     volumes:
       - .:/code
     expose:

@@ -1,3 +1,8 @@
 #!/bin/sh
 
-python manage.py runserver 0.0.0.0:8081
+python manage.py makemigrations --settings=core.settings.production
+python manage.py migrate --settings=core.settings.production
+python manage.py collectstatic --settings=core.settings.production --no-input --clear
+python manage.py update_index --settings=core.settings.production
+gunicorn core.wsgi:application -b :8082  --workers=5   --timeout=190 --graceful-timeout=100 --log-level=DEBUG
+exec "$@"
