@@ -14,7 +14,7 @@ from streams import blocks
 
 def file_path(instance, filename):
     basefilename, file_extension= os.path.splitext(filename)
-    a_filename= 'ucc_'
+    a_filename = 'ucc_'
     return f'files/{a_filename}{file_extension}'
 
 
