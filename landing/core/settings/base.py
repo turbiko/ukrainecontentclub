@@ -168,10 +168,5 @@ WAGTAILSEARCH_BACKENDS = {
 # Base URL to use when referring to full URLs within the Wagtail admin backend -
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
 WAGTAILADMIN_BASE_URL = "https://a1.ukrainecontentclub.com.ua/"
-
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['https://a1.ukrainecontentclub.com.ua/', 'https://ukrainecontentclub.com.ua/',
-                        'https://127.0.0.1', 'https://10.1.100.222']
-
-SECRET_KEY = '#$WERGFBVCCDRSRT%&^*IKJNBVFDRE$%^YUYTrt67ujhgfr567ujhbgfdefgbnjko0oiu7654edfgy7^%$ER$%^&*&^%43wdfghji8765r'
-
+CSRF_TRUSTED_ORIGINS = ['https://a1.ukrainecontentclub.com.ua/', 'https://ukrainecontentclub.com.ua/']
