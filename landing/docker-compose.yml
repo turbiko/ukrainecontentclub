@@ -7,7 +7,7 @@ services:
     command: bash runserver.sh
     volumes:
       - .:/usr/src/app
-    ports:
+    expose:
       - 8081:8082
     env_file:
       - env/app.env
