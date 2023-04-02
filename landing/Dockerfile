@@ -10,7 +10,7 @@ EXPOSE 8000
 # 2. Set PORT variable that is used by Gunicorn. This should match "EXPOSE"
 #    command.
 ENV PYTHONUNBUFFERED=1 \
-    PORT=8000
+    PORT=8081
 
 # Install system packages required by Wagtail and Django.
 RUN apt-get update --yes --quiet && apt-get install --yes --quiet --no-install-recommends \
@@ -38,8 +38,11 @@ COPY . /code/
 
 
 # Collect static files.
-#RUN python manage.py collectstatic --noinput --clear
-
+RUN python manage.py makemigrations --settings=core.settings.production
+RUN python manage.py migrate --settings=core.settings.production
+RUN python manage.py collectstatic --settings=core.settings.production --no-input --clear
+RUN python manage.py update_index --settings=core.settings.production
+RUN gunicorn core.wsgi:application -b :8081  --workers=5   --timeout=190 --graceful-timeout=100 --log-level=DEBUG
 # Runtime command that executes when "docker run" is called, it does the
 # following:
 #   1. Migrate the database.
