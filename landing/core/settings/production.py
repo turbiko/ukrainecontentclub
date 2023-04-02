@@ -3,7 +3,10 @@ from django.core.management import utils
 
 DEBUG = False
 
-SECRET_KEY = os.path.dirname(PROJECT_DIR)
+
+
+CORS_ORIGIN_ALLOW_ALL = True
+
 
 try:
     from .local import *
