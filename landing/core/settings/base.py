@@ -25,7 +25,7 @@ try:
 except KeyError:
     print('ERROR: The SECRET_KEY environment variable is not set.')
     SECRET_KEY = 'er%gjfgb;gklbnLIUG34tgfbgjfhj66yhgggfghfghfhgfdfgd$#^%3453$%^#$%356%^$%REFGthgn'
-
+print('SECRET_KEY= ', SECRET_KEY)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
@@ -176,11 +176,11 @@ WAGTAILSEARCH_BACKENDS = {
 
 # Base URL to use when referring to full URLs within the Wagtail admin backend -
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
-WAGTAILADMIN_BASE_URL = "https://a1.ukrainecontentclub.com.ua/"
+WAGTAILADMIN_BASE_URL = "https://a1.ukrainecontentclub.com.ua"
 
 CSRF_TRUSTED_ORIGINS = [ 'https://a1.ukrainecontentclub.com.ua', ]
 
-CSRF_COOKIE_DOMAIN = 'https://a1.ukrainecontentclub.com.ua'
+# CSRF_COOKIE_DOMAIN = 'https://a1.ukrainecontentclub.com.ua'
 
 CORS_ORIGIN_ALLOW_ALL = True
 
