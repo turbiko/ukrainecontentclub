@@ -12,10 +12,19 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+from dotenv import load_dotenv
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 
+try:
+    load_dotenv()
+    SECRET_KEY = os.getenv('SECRET_KEY')
+    if SECRET_KEY == None or SECRET_KEY == '':
+        SECRET_KEY = 'er%gjfgb;gklbnLIUG34tgfbgjfhj66yhgggfghfg%fhgfdfgd$#^%3453$%^#$%356%^$%REFGthgn'
+except KeyError:
+    print('ERROR: The SECRET_KEY environment variable is not set.')
+    SECRET_KEY = 'er%gjfgb;gklbnLIUG34tgfbgjfhj66yhgggfghfghfhgfdfgd$#^%3453$%^#$%356%^$%REFGthgn'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -171,6 +180,7 @@ WAGTAILADMIN_BASE_URL = "https://a1.ukrainecontentclub.com.ua/"
 
 CSRF_TRUSTED_ORIGINS = [ 'https://a1.ukrainecontentclub.com.ua', ]
 
-CSRF_COOKIE_DOMAIN = 'https://a1.ukrainecontentclub.com.ua/'
+CSRF_COOKIE_DOMAIN = 'https://a1.ukrainecontentclub.com.ua'
 
 CORS_ORIGIN_ALLOW_ALL = True
+

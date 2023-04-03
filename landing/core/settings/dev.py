@@ -6,8 +6,6 @@ from django.core.management import utils
 DEBUG = True
 print('DEBUG.dev= ', DEBUG)
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.path.dirname(PROJECT_DIR)
 
 # SECURITY WARNING: define the correct hosts in production!
 ALLOWED_HOSTS = ["*"]
