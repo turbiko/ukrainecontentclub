@@ -1,23 +1,6 @@
 version: "3.7"
 
 services:
-  database:
-    image: library/postgres:14-alpine
-    container_name: docker-django-database
-    restart: on-failure
-    env_file:
-      - env/database.env
-    expose:
-      - 5432
-    volumes:
-      - ./database/scripts:/docker-entrypoint-initdb.d
-      - database:/var/lib/postgresql/data
-    healthcheck:
-      test: [ "CMD-SHELL", "pg_isready -U postgres" ]  # TODO: find a way to dynamically get the username
-      interval: 10s
-      timeout: 5s
-      retries: 5
-
   uccweb:
     build: .
     image: docker-django-app
@@ -29,8 +12,7 @@ services:
     env_file:
       - env/app.env
       - env/database.env
-    depends_on:
-      - database
+
 
   nginx:
     image: library/nginx:latest
