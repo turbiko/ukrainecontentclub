@@ -28,7 +28,7 @@ https://site.name.tld/admin # wagtail admin-panel
 
 https://site.name.tld/django-admin  # Django admin-panel
 
-Docker
+Virtual env:
 git pull
 python manage.py makemigrations
 python manage.py migrate
