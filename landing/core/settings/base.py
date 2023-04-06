@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 
+    'menus.apps.MenusConfig',
     "streams.apps.StreamsConfig",
 ]
 
@@ -180,7 +181,7 @@ WAGTAILADMIN_BASE_URL = "https://a1.ukrainecontentclub.com.ua"
 
 CSRF_TRUSTED_ORIGINS = [ 'https://a1.ukrainecontentclub.com.ua', ]
 
-# CSRF_COOKIE_DOMAIN = 'https://a1.ukrainecontentclub.com.ua'
+# CSRF_COOKIE_DOMAIN = 'https://ukrainecontentclub.com.ua'
 
 CORS_ORIGIN_ALLOW_ALL = True
 

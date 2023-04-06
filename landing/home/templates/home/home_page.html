@@ -5,31 +5,42 @@
     <link rel="stylesheet"  type="text/css" href="{% static 'css/main.css' %}">
 {% endblock extra_css %}
 {% block content %}
-<div class="wrapper-menu"><!-- wrapper-menu -->
+<div class="wrapper-menu"> {# wrapper-menu #}
     {% include 'home/main_menu.html' %}
-</div> <!-- wrapper-menu -->
-<div class="wrapper"> <!-- div wrapper -->
+</div> {# wrapper-menu #}
+<div class="wrapper"> {# div wrapper #}
     <div class="column_empty"></div>
-    <main class="wrapper_content"> <!-- main wrapper_content -->
+    <main class="wrapper_content"> {# main wrapper_content #}
 
-        <div class="main_block page__section_1 about_block"> <!--  about_block -->
+        <div class="main_block page__section_1 about_block"> {# about_block #}
             <div class="main_block_side"></div>
             {% include 'home/about_ucc.html' %}
             <div class="main_block_side"></div>
-        </div>
-        <div class="main_block_full page__section_video"> <!-- section_video -->
+        </div>  {# about_block #}
+
+        <div class="main_block_full page__section_video"> {# section_video #}
             {% include 'home/youtube_block.html' %}
-        </div>
-        <div class="main_block page__section_partners"><!-- partners_logos -->
+        </div>{# section_video #}
+
+        <div class="main_block page__section_partners"> {# partners_logos #}
             <div class="main_block_side"></div>
 
                             {% include 'home/partners_logos.html' %}
 
             <div class="main_block_side"></div>
-        </div><!-- partners_logos -->
-        <div class="main_block page__section_first"> <!-- section_first --></div>
+        </div> {# partners_logos #}
 
-        <div class="main_block  main_blue2"><!-- section_prologue -->
+        <div class="main_block page__section_projects"> {# projects #}
+            <div class="main_block_side"></div>
+
+                            {% include 'home/projects.html' %}
+
+            <div class="main_block_side"></div>
+        </div> {# projects #}
+
+        <div class="main_block page__section_first">  </div>  {# section_first #}
+
+        <div class="main_block  main_blue2">{# section_prologue #}
             <div class="main_block_side"></div>
         <div class="main_block_central page__section_prologue flex_prologue">
             <div class="block__row_prologue">
@@ -42,9 +53,9 @@
             </div>
         </div>
         <div class="main_block_side"></div>
-        </div><!-- section_prologue -->
+        </div> {# section_prologue #}
 
-        <div class="main_block page__section_why main_color"><!-- section_why -->
+        <div class="main_block page__section_why main_color"> {# section_why #}
             <div class="main_block_side"></div>
 
             <div class="main_block_central ">
@@ -54,9 +65,9 @@
             </div>
 
             <div class="main_block_side"></div>
-        </div><!-- section_why -->
+        </div> {# section_why #}
 
-        <div class="main_block page__section_how main_blue2"><!-- _section_how -->
+        <div class="main_block page__section_how main_blue2"> {# _section_how #}
 
             <div class="main_block_side"></div>
 
@@ -64,27 +75,27 @@
                 {% include 'home/how.html' %}
             </div>
 
-        </div><!-- _section_how -->
+        </div> {# _section_how #}
 
-        <div class="main_block main_color"><!--  section_who -->
+        <div class="main_block main_color">  {# section_who #}
             <div class="main_block_side"></div>
             {% include 'home/who_we_are.html' %}
             <div class="main_block_side"></div>
-        </div> <!--  section_who -->
+        </div>  {# section_who #}
 
-        <div class="main_block page__section_second"><!--  page__section_second -->
+        <div class="main_block page__section_second"> {# page__section_second #}
                 <div class="main_block_side"></div>
                 <div class="main_block_central"></div>
                 <div class="main_block_side"></div>
-        </div><!--  page__section_second -->
+        </div> {# page__section_second #}
 
-        <div class="main_block page__section_guiding main_blue2"><!-- section_guiding  -->
+        <div class="main_block page__section_guiding main_blue2">{# section_guiding #}
             <div class="main_block_side"></div>
             {% include 'home/guiding_block.html' %}
             <div class="main_block_side"></div>
-        </div><!-- section_guiding  -->
+        </div> {# section_guiding #}
 
-        <div class="main_block main_yellow"> <!-- text_list_next -->
+        <div class="main_block main_yellow"> {# text_list_next #}
             <div class="main_block_side"></div>
             <div class="main_block_central page__section_next">
                 <div class="block_next">
@@ -95,33 +106,36 @@
                 </div>
             </div>
             <div class="main_block_side"></div>
-        </div><!-- text_list_next -->
+        </div> {# text_list_next #}
 
-        <div class="main_block main_color"> <!-- media about us -->
+        <div class="main_block main_color"> {# media about us #}
             <div class="main_block_side"></div>
             {% include 'home/media_about.html' %}
             <div class="main_block_side"></div>
-        </div><!-- media about us -->
+        </div> {# media about us #}
 
-        <div class="main_block page__section_banner_2"><!-- section_banner_2 -->
+        <div class="main_block page__section_banner_2"> {# section_banner_2 #}
                 <div class="main_block_side"></div>
                 <div class="main_block_central"></div>
                 <div class="main_block_side"></div>
-        </div><!-- section_banner_2 -->
+        </div> {# section_banner_2 #}
 
-        <div class="main_block main_color"><!-- our_logos -->
+        <div class="main_block main_color"> {# our_logos #}
             <div class="main_block_side"></div>
             {% include 'home/our_logos.html' %}
             <div class="main_block_side"></div>
-        </div><!-- our_logos -->
+        </div> {# our_logos #}
 
-        <div class="main_block_full"><!-- text_copyright -->
+        <div class="main_block_full"> {# text_copyright #}
             <div class="main_block_central main_block_clear main_footer page__section_copyr">
                 <div class="footer_text block_footer page__section_copyr">{{page.text_copyright | safe  }}</div>
             </div>
-        </div><!-- text_copyright -->
+        </div> {# text_copyright #}
 
-    </main><!-- main wrapper -->
+    </main> {# main wrapper #}
     <div class="column_empty"></div>
-</div> <!-- div wrapper_content -->
+</div> {# div wrapper_content #}
 {% endblock content %}
+        {% block extra_js %}
+<script type="text/javascript" src="{% static 'js/menujumps.js' %}"></script>
+        {% endblock %}

@@ -1,0 +1,7 @@
+{% load static wagtailcore_tags %}
+
+                <div class="block_projects">
+                  {% for block in page.projects_block %}
+                  {% include_block block %}
+                  {% endfor %}
+                </div>

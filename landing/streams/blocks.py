@@ -29,6 +29,31 @@ class PartnerLogo(blocks.StructBlock):
         icon = "placeholder"
         label = "Partners Logo with size"
 
+class Projects(blocks.StructBlock):
+    """Text Cards with text and title"""
+
+    title_projects = blocks.CharBlock(required=True, help_text="Add your title")
+
+
+    text_card = blocks.ListBlock(
+        blocks.StructBlock(
+            [
+                ("image", ImageChooserBlock(required=True)),
+                ("text", blocks.CharBlock(required=False, max_length=300)),
+                ("description", blocks.CharBlock(required=False, max_length=300)),
+                (
+                    "learn_more_url",
+                    blocks.URLBlock(
+                            required=False,
+                            help_text="Link URL.",  # noqa
+                    ),
+                ),
+        ]))
+
+    class Meta:  # noqa
+        template = "streams/block_projects.html"
+        icon = "placeholder"
+        label = "Projects block"
 
 class TextWhy(blocks.StructBlock):
     """Text Cards with title and texts  """

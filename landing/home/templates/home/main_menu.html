@@ -1,14 +1,19 @@
-{% load static wagtailcore_tags %}
+{% load static wagtailcore_tags   menus_tags %}
+{% get_menu "landingmenu" as navigation %}
+
+                <a href="" class="nav-item nav-link {% if item.link == request.path %}active{% endif %}">
+                   </a>
+
     <header class="header">
         <div class="header__container">
-            <a class="header__logo" href="">{{page.logo_abreviation}}</a>
+            <a  class="header__logo" href="/"><img style="height: 100%" alt="{{page.logo_abreviation}}" src="{{page.logo_image.url}}"/></a>
             <div class="header__menu menu">
                 <div class="menu__icon"></div>
                 <nav class="menu__body">
                 <ul class="menu__list">
-                    <li><a class="menu__link" data-goto=".page__section_first" href="#">ABOUT</a></li>
-                    <li><a class="menu__link" data-goto=".page__section_next" href="#">CONTACT US</a></li>
-                    <li><a class="menu__link" data-goto=".page__section_media" href="#">MEDIA ABOUT UCC</a></li>
+                    {% for item in navigation.menu_items.all %}
+                    <li><a class="menu__link" data-goto="{{item.goto_tag}}" href="{{ item.link }}"> {{ item.title }}</a></li>
+                    {% endfor %}
                 </ul>
                 </nav>
             </div>

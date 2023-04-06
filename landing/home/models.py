@@ -25,8 +25,9 @@ class HomePage(Page):
 
     logo_text = models.CharField(_('Logotype long'), max_length=50, blank=True)
     logo_abreviation = models.CharField(_('logo abbreviation'), max_length=5, blank=True)
+    logo_image = models.FileField(blank=True, upload_to="images/")
     text_intro = models.TextField(blank=True)
-
+    text_intro_title = models.TextField(blank=True)
     youtube_video_id = models.CharField(_('Youtube video ID'), max_length=50, blank=True)
 
     text_prologue_title = models.TextField(blank=True)
@@ -37,6 +38,12 @@ class HomePage(Page):
     ],
             null=True,
             blank=True, )
+    projects_block = StreamField([  # partners_logo_cards
+        ("projects_block", blocks.Projects()),
+    ],
+            null=True,
+            blank=True, )
+
     why_block = StreamField([
         ("text_why", blocks.TextWhy()),
     ],
@@ -80,11 +87,13 @@ class HomePage(Page):
     content_panels = Page.content_panels + [
         FieldPanel('logo_abreviation'),
         FieldPanel('logo_text'),
+        FieldPanel('logo_image'),
         FieldPanel('text_intro', classname="full"),
         FieldPanel('youtube_video_id'),
         FieldPanel('text_prologue_title'),
         FieldPanel('text_prologue'),
         FieldPanel("partners_logo"),
+        FieldPanel("projects_block"),
         FieldPanel("why_block"),
         FieldPanel("how_block"),
         FieldPanel("who_block"),
