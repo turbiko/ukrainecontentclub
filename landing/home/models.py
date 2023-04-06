@@ -37,36 +37,44 @@ class HomePage(Page):
         ("partners_logo_cards", blocks.PartnerLogo()),
     ],
             null=True,
-            blank=True, )
+            blank=True,
+            use_json_field=True,
+    )
     projects_block = StreamField([  # partners_logo_cards
         ("projects_block", blocks.Projects()),
     ],
             null=True,
-            blank=True, )
+            blank=True,
+            use_json_field=True,
+    )
 
     why_block = StreamField([
         ("text_why", blocks.TextWhy()),
     ],
             null=True,
             blank=True,
+            use_json_field=True,
     )
     how_block = StreamField([
         ("text_how", blocks.TextHow()),
     ],
             null=True,
             blank=True,
+            use_json_field=True,
     )
     who_block = StreamField([
         ("text_who", blocks.TextWho()),
     ],
             null=True,
             blank=True,
+            use_json_field=True,
     )
     guiding = StreamField([
         ("text_guiding", blocks.TextGuiding()),
     ],
             null=True,
             blank=True,
+            use_json_field=True,
     )
     text_list_next_title = models.TextField(blank=True)
     text_list_next = models.TextField(blank=True)
@@ -75,12 +83,15 @@ class HomePage(Page):
     ],
             null=True,
             blank=True,
+            use_json_field=True,
     )
     footer_logo = StreamField([  # footer_logo_cards
         ("footer_logo_cards", blocks.FooterLogo()),
     ],
             null=True,
-            blank=True, )
+            blank=True,
+            use_json_field=True,
+    )
     text_partners = models.TextField(blank=True)
     text_copyright = models.TextField(blank=True)
 
