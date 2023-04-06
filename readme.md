@@ -27,3 +27,11 @@ Server config (my deployment recommendation):
 https://site.name.tld/admin # wagtail admin-panel
 
 https://site.name.tld/django-admin  # Django admin-panel
+
+Docker
+git pull
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+
+gunicorn core.wsgi:application -b :8081  --workers=5   --timeout=190 --graceful-timeout=100 --log-level=DEBUG
