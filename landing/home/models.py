@@ -1,6 +1,7 @@
 import os
 from django.db import models
 from django.utils.translation import gettext_lazy as _
+from django.core.validators import FileExtensionValidator
 
 from wagtail.fields import RichTextField, StreamField
 from wagtail.models import Page
@@ -25,7 +26,8 @@ class HomePage(Page):
 
     logo_text = models.CharField(_('Logotype long'), max_length=50, blank=True)
     logo_abreviation = models.CharField(_('logo abbreviation'), max_length=5, blank=True)
-    logo_image = models.FileField(blank=True, upload_to="images/")
+    logo_image = models.FileField(blank=True, upload_to="images/",
+                                  validators=[FileExtensionValidator(['svg', 'png', 'jpg'])])
     text_intro = models.TextField(blank=True)
     text_intro_title = models.TextField(blank=True)
     youtube_video_id = models.CharField(_('Youtube video ID'), max_length=50, blank=True)
