@@ -379,7 +379,10 @@ body._touch .menu__list>li._active .menu__arrow {
 .shadow_main {
     width: 1200px;
 }
-
+  .logo_picture {
+        height: 50px;
+        margin: 5px 0 5px 0;
+    }
 .title_about_text {}
 
 
@@ -890,7 +893,7 @@ width: 100%;
     .page__section_banner_2 {
         color: black;
         height: 418px;
-        background-image: url("../img/footer-bg1.svg");
+        background-image: url("../img/footer-bg.svg");
         background-size: cover;
         background-position: center;
     }
@@ -1402,6 +1405,10 @@ width: 100%;
 /* --------style 767---------- */
 
 @media (max-width: 767px) {
+     .logo_picture {
+        height: 50px;
+        margin: 5px 0 5px 15px;
+    }
     .logo_about_ucc_block1 {
         width: 100%;
         margin: 5px 1px 2px 0;
@@ -1446,9 +1453,13 @@ width: 100%;
     .page__section_banner_2 {
         color: black;
         height: 418px;
-        background-image: url("../img/footer-bg1.svg");
+        background-image: url("../img/footer-bg.svg");
         background-size: cover;
         background-position: center;
+    }
+    .logo_picture {
+        height: 50px;
+        margin: 5px 0 5px 10px;
     }
     .guiding_principe {
         width: 100%;
@@ -1479,6 +1490,7 @@ width: 100%;
     }
 
     .block__flex_element_1 {
+        display: none;
         width: fit-content;
         margin-bottom: 30px;
         text-align: center;
@@ -1818,7 +1830,7 @@ width: 100%;
 @media (min-width: 767px) AND (max-width: 969px) {
     .page__section_banner_2 {
         color: black;
-        background-image: url("../img/footer-bg1.svg");
+        background-image: url("../img/footer-bg.svg");
         background-size: cover;
         background-position: center;
     }
@@ -1834,8 +1846,10 @@ width: 100%;
 
 /* --------page---------- */
 
-@media (min-width: 412px) AND (max-width: 766px) {
+@media (min-width: 412px) AND (max-width: 600px) {
+
     .page__section_banner_2 {
+        background-image: url("../img/footer-bg1.svg");
         color: black;
         height: 418px;
         background-size: cover;
@@ -1854,6 +1868,7 @@ width: 100%;
 
 @media (min-width: 360px) AND (max-width: 411px) {
     .page__section_banner_2 {
+        background-image: url("../img/footer-bg1.svg");
         color: black;
         height: 418px;
         background-size: cover;
