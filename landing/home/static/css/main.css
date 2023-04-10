@@ -474,7 +474,7 @@ width: 100%;
     height: 100%;
     width: 50%;
 }
-.block__projects_pics > img {
+.block__projects_pics > a > img {
     width: 100%;
     height: 100%;
 }
