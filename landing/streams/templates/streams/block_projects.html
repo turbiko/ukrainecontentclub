@@ -3,7 +3,7 @@
  {% for card in self.text_card %}
                     <div class="block__projects_pics">
                         {% image card.image original as img %}
-                            <a href="{{card.learn_more_url}}" target="_blank"><img alt="" src="{{img.url}}" /></a>
+                            <a href="{{card.learn_more_url}}" target="_blank"><img class="block__projects_pics_img" alt="" src="{{img.url}}" /></a>
                     </div>
 
                     <div class="block__projects_text">
