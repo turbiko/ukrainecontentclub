@@ -365,7 +365,7 @@ body._touch .menu__list>li._active .menu__arrow {
 /* ===== block 1 === end section 1 ==== */
 
 .body {
-    background-image: url("../img/main-bg1.png");
+    background-image: url("../img/main-bg1.svg");
 }
 
 .page {
@@ -1265,7 +1265,7 @@ width: 100%;
         grid-template-areas: "wrapper_content";
         justify-content: center;
         grid-template-rows: 1fr;
-        background-image: url("../img/main-bg1.png");
+        background-image: url("../img/main-bg1.svg");
     }
     .column_empty {
         display: none;
