@@ -2,10 +2,12 @@
         <div class="main_block_central block__row_1">
             <div class="block__flex_element_1">
                 <div class="title_line_div">
-                    <span class="title_line partners_bold56"> {{page.logo_text}} </span>
+                    <img class ="logo_about_ucc_block1"  alt="{{page.logo_abreviation}}" src="{{page.logo_image.url}}"/>
+                    {#<span class="title_line partners_bold56"> {{page.logo_text}} </span>#}
                 </div>
             </div>
-            <div class="block__flex_element_2">
-                <p class="text_yellow_background about_text">{{page.text_intro | safe  }}</p>
+            <div class="block__flex_element_2 text_yellow_background">
+
+             <p class="about_text">{{page.text_intro | safe  }}</p>
             </div>
         </div>
