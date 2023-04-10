@@ -164,6 +164,7 @@ class FooterLogo(blocks.StructBlock):
                     [
                         ("image", ImageChooserBlock(required=True)),
                         ("logo_title", blocks.CharBlock(required=False, max_length=200)),
+                        ("width_logo", blocks.IntegerBlock(required=False)),
                         (
                             "logo_url",
                             blocks.URLBlock(
