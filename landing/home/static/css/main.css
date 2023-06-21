@@ -488,7 +488,7 @@ width: 100%;
 .block__projects_text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /*justify-content: flex-start;*/
     height: 100%;
     color: black;
     width: 45%;
@@ -510,7 +510,7 @@ width: 100%;
 
 .projects_btn {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 2px;
   font-size: 16px;
   text-align: center;
   text-decoration: none;
@@ -518,7 +518,7 @@ width: 100%;
   border: 1px solid black;
   border-radius: 2px;
   cursor: pointer;
-    margin:0 auto;
+    margin: 2px;
 }
 
 
