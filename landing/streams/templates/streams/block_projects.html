@@ -1,5 +1,13 @@
 {% load wagtailimages_tags %}
-
+<style>
+    hr {
+        margin: 0.1rem 0;
+        color: black;
+        border: 0;
+        border-top: 1px solid;
+        opacity: .25;
+    }
+</style>
  {% for card in self.text_card %}
                     <div class="block_one_project">
                     <div class="block__projects_pics">
@@ -12,18 +20,13 @@
                     <div class="block__projects_text">
                         <h3>{{card.text|safe}}</h3> <br>
                         <p><b>{{card.description}}</b></p><br>
-                        <a href="{{card.learn_more_url}}" target="_blank" class="projects_btn"><b>{{ card.btn_name }}</b></a>
+                        <a href="{{card.learn_more_url}}" target="_blank" class="projects_btn">
+                            <b>{{ card.btn_name }}</b>
+                        </a>
+                    </div>
+                    </div>
 
-                    </div>
-                    </div>
-<style>
-    hr {
-        margin: 0.1rem 0;
-        color: black;
-        border: 0;
-        border-top: 1px solid;
-        opacity: .25;
-    }
-</style>
-<div style="width: 100%"> <hr> </div>
+                    {% if not forloop.last %}
+                    <div style="width: 100%"> <hr> </div>
+                    {% endif %}
 {%endfor%}
