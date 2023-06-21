@@ -492,12 +492,14 @@ width: 100%;
     color: black;
     width: 45%;
     padding:0 35px 0 5px;
+    margin-bottom: 20px;
 }
 .block__projects_text h3 {
     text-transform: uppercase;
     font-family: "KyivTypeSansH";
     font-size: 30px;
     line-height: 32px;
+    margin-bottom: 20px;
 }
 .btn_container {
     width:100%;
@@ -517,7 +519,7 @@ width: 100%;
   border: 1px solid black;
   border-radius: 3px;
   cursor: pointer;
-  margin: 2px;
+  margin: 20px 2px;
 }
 
 
