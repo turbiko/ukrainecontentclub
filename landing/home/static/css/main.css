@@ -465,6 +465,11 @@ body._touch .menu__list>li._active .menu__arrow {
 .block_projects {
 width: 100%;
     display: flex;
+    flex-direction: column;
+
+}
+.block_one_project {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -513,7 +518,7 @@ width: 100%;
   border: 1px solid black;
   border-radius: 2px;
   cursor: pointer;
-    max-width: 50%;
+    margin:0 auto;
 }
 
 
@@ -1060,12 +1065,11 @@ width: 100%;
 .block_projects {
 width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4vw 0;
+    flex-direction: column;
 }
-
+    .block_one_project {
+    flex-direction: column;
+}
 .block__projects_pics{
     text-align: center;
     width: 100%;
@@ -1413,9 +1417,9 @@ width: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4vw 0;
+}
+    .block_one_project {
+    flex-direction: column;
 }
       .block__projects_text {
           width: 90%;

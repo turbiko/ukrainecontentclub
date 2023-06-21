@@ -41,6 +41,7 @@ class Projects(blocks.StructBlock):
                 ("image", ImageChooserBlock(required=True)),
                 ("text", blocks.CharBlock(required=False, max_length=300)),
                 ("description", blocks.CharBlock(required=False, max_length=300)),
+                ("btn_name", blocks.CharBlock(required=False, max_length=300)),
                 (
                     "learn_more_url",
                     blocks.URLBlock(
