@@ -499,6 +499,7 @@ width: 100%;
     font-family: "KyivTypeSansH";
     font-size: 30px;
     line-height: 32px;
+    margin-top: 3px;
     margin-bottom: 20px;
 }
 .btn_container {
