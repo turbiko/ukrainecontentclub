@@ -39,9 +39,9 @@ class Projects(blocks.StructBlock):
         blocks.StructBlock(
             [
                 ("image", ImageChooserBlock(required=True)),
-                ("text", blocks.CharBlock(required=False, max_length=300)),
-                ("description", blocks.CharBlock(required=False, max_length=300)),
-                ("btn_name", blocks.CharBlock(required=False, max_length=300)),
+                ("text", blocks.CharBlock(required=False, max_length=400)),
+                ("description", blocks.CharBlock(required=False, max_length=400)),
+                ("btn_name", blocks.CharBlock(required=False, max_length=400)),
                 (
                     "learn_more_url",
                     blocks.URLBlock(
@@ -64,7 +64,7 @@ class TextWhy(blocks.StructBlock):
     text_cards = blocks.ListBlock(
         blocks.StructBlock(
             [
-                ("text", blocks.CharBlock(required=False, max_length=300)),
+                ("text", blocks.CharBlock(required=False, max_length=400)),
         ]))
 
     class Meta:  # noqa
@@ -80,7 +80,7 @@ class TextHow(blocks.StructBlock):
     text_cards = blocks.ListBlock(
         blocks.StructBlock(
             [
-                ("text", blocks.CharBlock(required=False, max_length=300)),
+                ("text", blocks.CharBlock(required=False, max_length=400)),
         ]))
 
     class Meta:  # noqa
@@ -125,7 +125,7 @@ class TextWho(blocks.StructBlock):
     text_cards = blocks.ListBlock(
         blocks.StructBlock(
             [
-                ("text", blocks.CharBlock(required=False, max_length=300)),
+                ("text", blocks.CharBlock(required=False, max_length=500)),
         ]))
 
     class Meta:  # noqa
@@ -145,7 +145,7 @@ class TextGuiding(blocks.StructBlock):
             [
                 ("number", blocks.IntegerBlock(required=False)),
                 ("title", blocks.CharBlock(required=False, max_length=60)),
-                ("description", blocks.CharBlock(required=False, max_length=200)),
+                ("description", blocks.CharBlock(required=False, max_length=300)),
         ]))
 
     class Meta:  # noqa
