@@ -418,7 +418,7 @@ body._touch .menu__list>li._active .menu__arrow {
 }
 
 .page__text p {
-    margin: 0px 0px 20px 0px;
+    margin: 0;
 }
 
 .page__sub_title {
@@ -1045,8 +1045,7 @@ width: 100%;
         padding-top: 50px;
     }
     .page__section_prologue {
-        height: 470px;
-        padding-bottom: 70px;
+
     }
     .block__flex_element_2 {
         padding: 20px;
