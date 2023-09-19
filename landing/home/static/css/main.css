@@ -611,6 +611,11 @@ width: 100%;
 
 /* ------ how ------ */
 
+.wrap-balanced {
+    text-wrap: balanced;
+    text-align: right;
+}
+
 .page__section_how {
     background-image: url("../img/flower2.png");
     background-repeat: no-repeat;
