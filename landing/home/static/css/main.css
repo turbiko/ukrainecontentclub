@@ -888,7 +888,7 @@ width: 100%;
     }
     .block_how {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 5vw 4vw;
     }
     .supported_by {
@@ -1300,7 +1300,7 @@ width: 100%;
     }
     .block_how {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 5vw 4vw;
     }
     .block__flex_why {
